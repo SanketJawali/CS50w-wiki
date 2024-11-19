@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create
+{% endblock %}
+
+{% block body %}
+    <h1>Create New Page</h1>
+    {% if message %}
+        <h4>{{ message }}</h4>
+    {% endif %}
+    <form action="/create" method="post">
+        {% csrf_token %}
+        <h4>Title:</h4>
+        <input type="text" name="title" style="width: 90%; margin: 1rem; margin-top: 0; padding: 0.5rem;">
+        <br>
+        <h4>Post:</h4>
+        <textarea type="text" name="post" style="height: 30rem; width: 90%; padding: 0.5rem; margin: 1rem; margin-top:0; text-align: left; resize:none">{{ post }}</textarea>
+        <br>
+        <input type="submit" value="Save" style="background-color: rgb(55, 229, 39); border: 1px solid black; border-radius: 3px">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: white;
+    overflow: hidden;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    height: 99vh;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 99vh;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
